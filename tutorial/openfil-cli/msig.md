@@ -55,3 +55,66 @@ OPTIONS:
    --max-fee value, --mf value      the max tx fee allowed for this transaction (default: "1 FIL")
    --help, -h                       show help (default: false)
 ```
+
+## msig wallet create
+
+`openfil-cli msig create` - Create a new multisig wallet
+
+Example:
+
+Msig wallet create
+
+```
+openfil-cli msig create --from f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea --required 2 --output ./msig-create.txt f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq
+```
+
+cat ./msig-create.txt
+
+```
+{
+  "version": 0,
+  "to": "f01",
+  "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
+  "nonce": 10,
+  "value": 0,
+  "gas_limit": 26682752,
+  "gas_feecap": 102100,
+  "gas_premium": 100161,
+  "method": 2,
+  "params": {
+    "name": "ConstructorParams",
+    "params": "{\"Signers\":[\"f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea\",\"f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a\",\"f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq\"],\"NumApprovalsThreshold\":2,\"UnlockDuration\":0,\"StartEpoch\":0}"
+  }
+}
+```
+
+Sign transaction
+
+```
+openfil-cli sign sign-tx --tx-path .//msig-create.txt --output ./msig-create_sign.txt
+```
+
+Send transaction
+
+```
+openfil-cli send --tx-path ./msig-create_sign.txt                                     
+bafy2bzacedqkl2ljnksemlxxfu25d57oduzi4byclwk5hmdrstuw64gdulxiy
+```
+
+## msig inspect
+
+`openfil-cli msig inspect` - Inspect a multisig wallet
+
+```
+openfil-cli msig inspect f02025465
+Balance: 0
+Spendable: 0
+Threshold: 2 / 3
+Signers:
+ID         Address
+f02025360  f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea
+f02025370  f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a
+f02025427  f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq
+Transactions:  0
+
+```

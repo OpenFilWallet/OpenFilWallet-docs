@@ -10,10 +10,24 @@ OpenFilWallet provides a safe and simple way to send Filecoin transactions, and 
 
 ## features
 
-* Open source: The OpenFilWallet source code repository is hosted at [github.com/OpenFilWallet/OpenFilWallet](https://github.com/OpenFilWallet/OpenFilWallet)
-* HD Wallet: Hierarchical deterministic wallet, manage multiple wallets through mnemonic words.
-* Security: Dual password. The private key/mnemonic is encrypted with the `root password`, and the `login password` must be entered to use the wallet. The timeout is not used, and the `login password` needs to be re-entered.
-* Permissions: Restrict requests through multi-level tokens.
-* Multi-function: built for miner, supports all commonly used multi-signature transactions and ordinary transactions.
-* Offline signature: supports offline signature function, outputs signed transactions, and submits transactions through [msgboat](https://github.com/OpenFilWallet/msgboat) service to increase security.
+*   **Open Source**
 
+    The OpenFilWallet source code repository is hosted at [github.com/OpenFilWallet/OpenFilWallet](https://github.com/OpenFilWallet/OpenFilWallet)
+*   **HD Wallet**
+
+    Hierarchical deterministic wallet, manage multiple wallets through mnemonic words.
+*   **Security**
+
+    Dual password. The private key/mnemonic is encrypted with the `root password`, and the `login password` must be entered to use the wallet. The timeout is not used, and the `login password` needs to be re-entered.
+*   **Permissions**
+
+    Restrict requests through multi-level tokens.
+*   **Multi-function**
+
+    Built for miner, supports all commonly used multi-signature transactions and ordinary transactions.
+*   **Offline signature**
+
+    Supports offline signature function, outputs signed transactions, and submits transactions through [msgboat](https://github.com/OpenFilWallet/msgboat) service to increase security.
+*   **Transaction Readable**
+
+    Transaction generation(unsigned transaction), transaction signing, and transaction sending are operated separately to increase security, and the transaction content is not encoded and human-readable.
