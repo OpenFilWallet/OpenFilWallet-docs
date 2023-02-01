@@ -1,4 +1,4 @@
-# msig
+# Msig
 
 `openfil-cli msig` includes the multi-signature implementation of miner control commands, allowing miner owners to easily use multi-signature management miners, which greatly improves the security of miner.
 
@@ -75,11 +75,11 @@ cat ./msig-create.txt
   "version": 0,
   "to": "f01",
   "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
-  "nonce": 10,
+  "nonce": 11,
   "value": 0,
-  "gas_limit": 26682752,
-  "gas_feecap": 102100,
-  "gas_premium": 100161,
+  "gas_limit": 25985710,
+  "gas_feecap": 102240,
+  "gas_premium": 100996,
   "method": 2,
   "params": {
     "name": "ConstructorParams",
@@ -98,7 +98,24 @@ Send transaction
 
 ```
 openfil-cli send --tx-path ./msig-create_sign.txt                                     
-bafy2bzacedqkl2ljnksemlxxfu25d57oduzi4byclwk5hmdrstuw64gdulxiy
+bafy2bzaceardg7pr4a4gqpchcn3qfwtyxqbxaoegz4a72bna3vqce2csjckws
+```
+
+## msig list
+
+`openfil-cli msig list` - msig wallet list
+
+```
+openfil-cli msig list
+Msig address: f2vzjglx5b5wytagquv4koqdpknefekknjnt6fzhq 
+Balance: 0 FIL
+Threshold: 2 / 3
+Signers:
+ID                                                                                      Address
+f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea                                               f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea
+f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a  f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a
+f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq  f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq
+
 ```
 
 ## msig inspect
@@ -106,7 +123,7 @@ bafy2bzacedqkl2ljnksemlxxfu25d57oduzi4byclwk5hmdrstuw64gdulxiy
 `openfil-cli msig inspect` - Inspect a multisig wallet
 
 ```
-openfil-cli msig inspect f02025465
+openfil-cli msig inspect f2vzjglx5b5wytagquv4koqdpknefekknjnt6fzhq         
 Balance: 0
 Spendable: 0
 Threshold: 2 / 3
@@ -116,5 +133,4 @@ f02025360  f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea
 f02025370  f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a
 f02025427  f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq
 Transactions:  0
-
 ```
