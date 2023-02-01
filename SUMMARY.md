@@ -31,6 +31,6 @@
   * [Sign](tutorial/openfil-cli/sign.md)
   * [Wallet](tutorial/openfil-cli/wallet.md)
   * [Miner](tutorial/openfil-cli/miner.md)
-  * [msig](tutorial/openfil-cli/msig.md)
+  * [Msig](tutorial/openfil-cli/msig.md)
   * [Chain](tutorial/openfil-cli/chain.md)
 * [Web UI](tutorial/web-ui.md)

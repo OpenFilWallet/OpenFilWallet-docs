@@ -8,11 +8,4 @@ Run `openfil-cli signout`
 sign out successful
 ```
 
-After logging out, run `openfil-cli status` again, you will get:
-
-```
-openfil-cli status 
-Wallet Lock:     true
-Wallet Offline:  false
-Wallet Version:  v0.0.1+git.2b9f02f
-```
+After logging out, run `openfil-cli status` again, you will get `Wallet Lock: true`

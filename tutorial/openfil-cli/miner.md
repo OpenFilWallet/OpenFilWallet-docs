@@ -297,6 +297,47 @@ Error: worker key change cannot be confirmed until 2563514, current height is 25
 
 The reason is, one has to wait some time before sending the confirm-change-worker transaction, which is required by the network. When the block height matches, send confirm-change-worker transaction again and it will succeed
 
+After 900 blocks...
+
+Execute again:
+
+```
+openfil-cli miner confirm-change-worker  --actor f02025378 --output ./confirm-change-worker.txt f3qsjierxyqj2ej4uj2ioe7awin63undwb3uyyic6dztvcfumfmjiufnjkjd7q2ohj6hgtcnvqikytzve75zpq
+```
+
+cat ./confirm-change-worker.txt
+
+```
+{
+  "version": 0,
+  "to": "f02025378",
+  "from": "f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a",
+  "nonce": 3,
+  "value": 0,
+  "gas_limit": 3350190,
+  "gas_feecap": 101184,
+  "gas_premium": 99846,
+  "method": 21,
+  "params": {
+    "name": "",
+    "params": ""
+  }
+}
+```
+
+Sign transaction
+
+```
+openfil-cli sign sign-tx --tx-path ./confirm-change-worker.txt --output ./confirm-change-worker_sign.txt
+```
+
+Send transaction
+
+```
+openfil-cli send --tx-path ./confirm-change-worker_sign.txt
+bafy2bzacea6gznrvm7trh7f7veuyxsi2vmmefnyjq2gmiwwrx34b4uzippsyi
+```
+
 ## change-beneficiary
 
 Changing the beneficiary address requires two transactions, Propose and Confirm.

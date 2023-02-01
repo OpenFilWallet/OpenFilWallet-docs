@@ -25,8 +25,8 @@ Example:
 sign-msg
 
 ```
-openfil-cli sign sign-msg f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea 4300e907
-01a724234cfe981b49ce3684863f04582d23b8b6123fef4032b9f7ce1794d7b94b6095f606899ba048eb586d53231988aafe3a45ec507c4caf8514f7a7d32c423800
+openfil-cli sign sign-msg f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my 4300e907
+017374d27c6ee9063762772d5cd285065181cba15aaa5ef9ba41f28e7fe67057cc073ee1f8c9dac0daffa86f87ec87dc8c9106c24fce7488c5710eca3af6a0376801
 ```
 
 sign-tx
@@ -41,20 +41,20 @@ cat ./transfer\_sign.txt
 {
   "message": {
     "version": 0,
-    "to": "f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a",
-    "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
-    "nonce": 0,
-    "value": 1000000000000000000,
-    "gas_limit": 2999212,
-    "gas_feecap": 103069,
-    "gas_premium": 100655,
+    "to": "f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my",
+    "from": "f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki",
+    "nonce": 43,
+    "value": 100000000000000000,
+    "gas_limit": 605085,
+    "gas_feecap": 101076,
+    "gas_premium": 100022,
     "method": 0,
     "params": {
       "name": "",
       "params": ""
     }
   },
-  "signature": "58420124b25ab39cd89f488c1fa64768b724db14e3857eb7f62473371817246eb1f9cd4c9e77c467f1522f03758c0b5ce9abb11119b86ded38906c45d4eb4f5c22649201"
+  "signature": "584201abc3e2c6cd6ab8fc173b8adb30837bfbf0683aed0ae53b65bb6b3824b875f0451ef33e1f6f119bec6805fa1a658704d8d6f0230b0af63d336e32fcf98807ee5600"
 }
 ```
 
@@ -65,20 +65,20 @@ openfil-cli sign sign-tx --tx-path ./transfer.txt
 {
   "message": {
     "version": 0,
-    "to": "f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a",
-    "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
-    "nonce": 0,
-    "value": 1000000000000000000,
-    "gas_limit": 2999212,
-    "gas_feecap": 103069,
-    "gas_premium": 100655,
+    "to": "f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my",
+    "from": "f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki",
+    "nonce": 43,
+    "value": 100000000000000000,
+    "gas_limit": 605085,
+    "gas_feecap": 101076,
+    "gas_premium": 100022,
     "method": 0,
     "params": {
       "name": "",
       "params": ""
     }
   },
-  "signature": "58420124b25ab39cd89f488c1fa64768b724db14e3857eb7f62473371817246eb1f9cd4c9e77c467f1522f03758c0b5ce9abb11119b86ded38906c45d4eb4f5c22649201"
+  "signature": "584201abc3e2c6cd6ab8fc173b8adb30837bfbf0683aed0ae53b65bb6b3824b875f0451ef33e1f6f119bec6805fa1a658704d8d6f0230b0af63d336e32fcf98807ee5600"
 }
 ```
 
