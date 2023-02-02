@@ -34,3 +34,7 @@
   * [Msig](tutorial/openfil-cli/msig.md)
   * [Chain](tutorial/openfil-cli/chain.md)
 * [Web UI](tutorial/web-ui.md)
+
+## MULTI SIGNATURE
+
+* [Multi-signature miner](multi-signature/multi-signature-miner.md)
