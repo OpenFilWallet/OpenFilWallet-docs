@@ -4,7 +4,7 @@ description: >-
   ensure fund security!
 ---
 
-# Multi-signature miner
+# Multi-signature owner
 
 Example of changing the miner owner to a multi-signature wallet
 

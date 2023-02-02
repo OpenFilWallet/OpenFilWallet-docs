@@ -26,8 +26,10 @@ Explanation of OPTIONS
 
 Example:
 
+An unsigned transaction can be made with the following command:
+
 ```
-/openfil-cli transfer --output ./transfer.txt  f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my 0.1
+openfil-cli transfer -o ./transfer.txt f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a 1
 ```
 
 cat ./transfer.txt
@@ -35,13 +37,13 @@ cat ./transfer.txt
 ```
 {
   "version": 0,
-  "to": "f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my",
-  "from": "f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki",
-  "nonce": 43,
-  "value": 100000000000000000,
-  "gas_limit": 605085,
-  "gas_feecap": 101076,
-  "gas_premium": 100022,
+  "to": "f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a",
+  "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
+  "nonce": 0,
+  "value": 1000000000000000000,
+  "gas_limit": 2999212,
+  "gas_feecap": 103069,
+  "gas_premium": 100655,
   "method": 0,
   "params": {
     "name": "",
@@ -53,17 +55,16 @@ cat ./transfer.txt
 If `--output` is not specified
 
 ```
-openfil-cli transfer  f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my 0.1
-
+openfil-cli transfer f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a 1
 {
   "version": 0,
-  "to": "f1am2dr43qfy4vhfrxmdbmwzlsa3c3wanzm7dn7my",
-  "from": "f1ys7n5mrm2vtx6coxc5wkmkddan7rznfkax3a6ki",
-  "nonce": 43,
-  "value": 100000000000000000,
-  "gas_limit": 605085,
-  "gas_feecap": 101588,
-  "gas_premium": 100534,
+  "to": "f3v4kunmpw5wxpc62lhwf57puurye5artjsqmdufmeo3r43tmqkpjkqmwmpfexcjdutowp5a6auhl7u3gzb27a",
+  "from": "f1e3fkjzjm7wio6bzec5eqesp6khn25smsrvrv2ea",
+  "nonce": 0,
+  "value": 1000000000000000000,
+  "gas_limit": 2999212,
+  "gas_feecap": 103069,
+  "gas_premium": 100655,
   "method": 0,
   "params": {
     "name": "",

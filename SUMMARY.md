@@ -37,4 +37,5 @@
 
 ## MULTI SIGNATURE
 
-* [Multi-signature miner](multi-signature/multi-signature-miner.md)
+* [Multi-signature owner](multi-signature/multi-signature-owner.md)
+* [Multi-signature withdraw](multi-signature/multi-signature-withdraw.md)

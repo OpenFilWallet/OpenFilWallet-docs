@@ -5,6 +5,6 @@ The `openfil-cli send` command send a signed transaction to the Filecoin network
 Example:
 
 ```
-openfil-cli send --tx-path ./transfer_sign.txt
-bafy2bzacec53ftqqiqa5pf5qw2emshyx7vmzmmi5fgeawxutzcrjoasa4wcse
+openfil-cli send --tx-path ./transfer_sign.txt                                
+bafy2bzacedhsam7fdq3fdhrnpqsq2s5ataxv7hfgriq2h4iyogdurgp5itbn2
 ```
