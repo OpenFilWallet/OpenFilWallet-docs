@@ -1,7 +1,7 @@
 ---
 description: >-
-  The owner is a multi-signature miner, which can improve node security and
-  ensure fund security!
+  The owner of the miner is a multi-signature wallet, which can improve node
+  security and keep funds safe!
 ---
 
 # Multi-signature owner

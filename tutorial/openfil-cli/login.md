@@ -10,11 +10,4 @@ Password:
 login successful
 ```
 
-After successful login, run `openfil-cli status` again, you will get:
-
-```
-openfil-cli status 
-Wallet Lock:     false
-Wallet Offline:  false
-Wallet Version:  v0.0.1+git.2b9f02f
-```
+After successful login, run `openfil-cli status` again, you will get `Wallet Lock: false`
