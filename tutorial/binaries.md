@@ -13,12 +13,12 @@ USAGE:
    openfil-cli [global options] command [command options] [arguments...]
 
 VERSION:
-   v0.0.1+git.e7bc4fe
+   v0.0.1+git.57689bb
 
 COMMANDS:
    status    query wallet status
    login     login openfil wallet
-   signout   sign out openfil wallet
+   logout    logout openfil wallet
    node      The daemon node used by the OpenFilWallet wallet
    chain     Interact with filecoin blockchain
    send      send tx
@@ -31,6 +31,7 @@ COMMANDS:
 
 GLOBAL OPTIONS:
    --help, -h           show help (default: false)
+   --verbose, --vv      enables very verbose mode (default: false)
    --version, -v        print the version (default: false)
    --wallet-repo value  Specify openfilwallet repo path. flag(--wallet-repo) or env(OPEN_FIL_WALLET_PATH) (default: "~/.openfilwallet") [$OPEN_FIL_WALLET_PATH]
 ```
@@ -38,7 +39,7 @@ GLOBAL OPTIONS:
 `openfild`: wallet service process, and mnemonic/private key/password management
 
 ```
-openfild -h
+ openfild -h
 NAME:
    openfild - open source hd wallet for Filecoin
 
@@ -46,7 +47,7 @@ USAGE:
    openfild [global options] command [command options] [arguments...]
 
 VERSION:
-   v0.0.1+git.e7bc4fe
+   v0.0.1+git.57689bb
 
 COMMANDS:
    init      Initialize a OpenFilWallet repo
@@ -59,6 +60,7 @@ COMMANDS:
 
 GLOBAL OPTIONS:
    --help, -h           show help (default: false)
+   --verbose, --vv      enables very verbose mode (default: false)
    --version, -v        print the version (default: false)
    --wallet-repo value  Specify openfilwallet repo path. flag(--wallet-repo) or env(OPEN_FIL_WALLET_PATH) (default: "~/.openfilwallet") [$OPEN_FIL_WALLET_PATH]
 ```

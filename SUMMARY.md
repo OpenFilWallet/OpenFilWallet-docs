@@ -24,7 +24,7 @@
 * [openfil-cli](tutorial/openfil-cli/README.md)
   * [Status](tutorial/openfil-cli/status.md)
   * [Login](tutorial/openfil-cli/login.md)
-  * [Signout](tutorial/openfil-cli/signout.md)
+  * [Logout](tutorial/openfil-cli/logout.md)
   * [Node](tutorial/openfil-cli/node.md)
   * [Transfer](tutorial/openfil-cli/transfer.md)
   * [Sign](tutorial/openfil-cli/sign.md)
