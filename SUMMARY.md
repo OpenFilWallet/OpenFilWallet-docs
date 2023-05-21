@@ -33,7 +33,17 @@
   * [Miner](tutorial/openfil-cli/miner.md)
   * [Msig](tutorial/openfil-cli/msig.md)
   * [Chain](tutorial/openfil-cli/chain.md)
-* [Web UI](tutorial/web-ui.md)
+* [Web UI](tutorial/web-ui/README.md)
+  * [logout](tutorial/web-ui/logout.md)
+  * [login](tutorial/web-ui/login.md)
+  * [dashboard](tutorial/web-ui/dashboard.md)
+  * [transfer](tutorial/web-ui/transfer.md)
+  * [miner](tutorial/web-ui/miner.md)
+  * [msig](tutorial/web-ui/msig.md)
+  * [sign](tutorial/web-ui/sign.md)
+  * [send](tutorial/web-ui/send.md)
+  * [node](tutorial/web-ui/node.md)
+  * [tool](tutorial/web-ui/tool.md)
 
 ## MULTI SIGNATURE
 

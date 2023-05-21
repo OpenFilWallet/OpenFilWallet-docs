@@ -7,5 +7,5 @@ Run `openfil-cli status`
 ```
 Wallet Lock:     true
 Wallet Offline:  false
-Wallet Version:  v0.0.1+git.e7bc4fe
+Wallet Version:  v0.0.1+git.39300c3
 ```

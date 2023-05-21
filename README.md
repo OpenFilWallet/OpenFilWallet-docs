@@ -18,7 +18,7 @@ OpenFilWallet provides a safe and simple way to send Filecoin transactions, and 
     Hierarchical deterministic wallet, manage multiple wallets through mnemonic words.
 *   **Security**
 
-    Dual password. The private key/mnemonic is encrypted with the `root password`, and the `login password` must be entered to use the wallet. The timeout is not used, and the `login password` needs to be re-entered.
+    Dual password. The private key/mnemonic is encrypted with the `master password`, and the `login password` must be entered to use the wallet. The timeout is not used, and the `login password` needs to be re-entered.
 *   **Permissions**
 
     Restrict requests through multi-level tokens.

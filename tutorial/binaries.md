@@ -13,7 +13,7 @@ USAGE:
    openfil-cli [global options] command [command options] [arguments...]
 
 VERSION:
-   v0.0.1+git.57689bb
+   v0.0.1+git.39300c3
 
 COMMANDS:
    status    query wallet status
@@ -39,7 +39,7 @@ GLOBAL OPTIONS:
 `openfild`: wallet service process, and mnemonic/private key/password management
 
 ```
- openfild -h
+openfild -h
 NAME:
    openfild - open source hd wallet for Filecoin
 
@@ -47,7 +47,7 @@ USAGE:
    openfild [global options] command [command options] [arguments...]
 
 VERSION:
-   v0.0.1+git.57689bb
+   v0.0.1+git.39300c3
 
 COMMANDS:
    init      Initialize a OpenFilWallet repo

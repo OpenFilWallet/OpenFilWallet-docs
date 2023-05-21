@@ -5,6 +5,7 @@ Make sure the openfild process is not running. Run the following command to upgr
 ```
 cd OpenFilWallet
 git pull
+git checkout [tag]
 make build
 sudo make install
 ```

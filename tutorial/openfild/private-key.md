@@ -1,6 +1,6 @@
 # Private Key
 
-The `wallet` command module under `openfild` is responsible for managing wallet private keys, including the functions of create, list, import, export, and delete, all of which require root password for authorization verification. You can use `openfild wallet import` to import the private key from lotus, and the usage style is consistent with lotus.
+The `wallet` command module under `openfild` is responsible for managing wallet private keys, including the functions of create, list, import, export, and delete, all of which require master password for authorization verification. You can use `openfild wallet import` to import the private key from lotus, and the usage style is consistent with lotus.
 
 ```
 openfild wallet -h
