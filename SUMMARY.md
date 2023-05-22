@@ -33,7 +33,7 @@
   * [Miner](tutorial/openfil-cli/miner.md)
   * [Msig](tutorial/openfil-cli/msig.md)
   * [Chain](tutorial/openfil-cli/chain.md)
-* [Web UI](tutorial/web-ui/README.md)
+* [web ui](tutorial/web-ui/README.md)
   * [logout](tutorial/web-ui/logout.md)
   * [login](tutorial/web-ui/login.md)
   * [dashboard](tutorial/web-ui/dashboard.md)

@@ -10,6 +10,7 @@ Please make sure you have installed:
 
 * **Go (1.19)** - [https://go.dev/learn/](https://go.dev/learn/)
 * **Rust** - [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
+* **Node 16.x -** [**https://nodejs.org/dist/v16.15.0/**](https://nodejs.org/dist/v16.15.0/)
 
 Linux / MacOS
 
